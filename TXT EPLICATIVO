@@ -1,0 +1,40 @@
+
+Averiguar por el uso de picture
+
+Etiqueta picture ---> Figcaption. 
+Insertar ----> Mapas gratuitos/ Contenido de spotify / Vimeo / Incrustar otras paginas web. 
+
+Clase: 05 Tablas. 
+Tablas estaticas como prepararla. 
+
+Refactorizar codigos/ reestructurar paginas. 
+
+Dentro del Main utilizar una etiqueta Table. 
+
+tr ---> representa una fila o un registro 
+td ---> Representa a cada celda
+th ---> Representa a una celda del encabezado 
+
+Tablas ---> Rowspan y colspan 
+
+Form ---> utilizar con TYPE/ Checkbox / Text / Email / Date / Color 
+Size Tamaño largo de texto --- 
+Formulario de registro revisar. 
+
+Crear una carpeta y crear un archivo Style en CSS. 
+Variables en la que se guarda los colores.--> Valor de atributo con el nombre de la Variables
+
+Selector al cual yo quiero cambiar. 
+
+h1 -- Selector 
+{
+    Color: BLue; --> Propiedad: Valor.  
+
+}
+
+Luego dentro del head de HTML. 
+
+Link (Para llamar el documento CSS)
+
+
+

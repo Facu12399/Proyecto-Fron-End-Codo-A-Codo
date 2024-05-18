@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    font-family: "Catamaran", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 10px;
+    background-color: black;
+    text-align: center;
+}
+
+.encabezado{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #F1C40F;
+}
+
+.encabezado .logo{
+    margin: 10px;
+}
+
+.encabezado .logo img{
+    width: 100px;
+    height: 110px;
+}
+
+.encabezado .interaccion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.encabezado .interaccion input{
+    width: 250px;
+    height: 25px;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.encabezado .interaccion input:focus {
+    outline: none;
+}
+
+.encabezado .interaccion ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 5px;
+}
+
+.encabezado .interaccion ul li{
+    margin: 5px;
+    font-size: 16px;
+}
+
+.encabezado .interaccion img{
+    width: 25px;
+    width: 25px;
+}
+
+.encabezado .interaccion{
+    display: flex;
+    flex-direction: row;
+}
+
+.menu{
+    background-color: #000;
+    position: relative;
+}
+
+#despliegue{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#despliegue li{
+    padding: 10px;
+}
+
+#despliegue a{
+    text-decoration: none;
+    color: gray;
+}
+
+#hamburguesa{
+    color: gray;
+    display: none;
+    cursor: pointer;
+}
+
+.main{
+    background-color: #000;
+    grid-column: 1 / span 2;
+}
+
+.galeria{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: auto;
+    gap: 10px;
+}
+
+.item-galeria{
+    background-color: #fff;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+
+.item-galeria a img{
+    width: 200px;
+}
+
+.aside {
+    background-color: #fff;
+    grid-column: 3;
+    position: relative;
+    border: 1px solid black;
+}
+
+.contenedor-msg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.mensaje {
+    width: 90%;
+    animation: cambiar-mensaje 15s infinite;
+    opacity: 0;
+    position: absolute;
+    top: 35%;
+    transform: translateY(-50%); 
+    margin: 10px 0;
+    font-style: italic;
+}
+
+.mensaje:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.mensaje:nth-child(2) {
+    animation-delay: 5s;
+}
+
+.mensaje:nth-child(3) {
+    animation-delay: 10s;
+}
+
+@keyframes cambiar-mensaje {
+    0%, 100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    25%, 75% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+}
+
+.footer{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.footer p{
+    color: gray;
+    font-size: 14px;
+}
+
+.footer p a{
+    text-decoration: none;
+    color: gray;
+}
+
+.footer p a img{
+    width: 15px;
+    height: 15px;
+}
+
+.encabezado, .menu, .footer{
+    grid-column: 1 / span 3;
+}
+
+@media only screen and (max-width: 800px){
+
+    .grid-container{
+        display: grid;
+        grid-template-columns: 2fr 1fr 180px;
+        grid-template-rows: auto;
+        gap: 10px;
+        background-color: black;
+        text-align: center;
+    }
+
+    .galeria{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: auto;
+        gap: 10px;
+    }
+
+}
+
+@media only screen and (max-width: 600px){
+
+    .grid-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 10px;
+        background-color: black;
+        text-align: center;
+    }
+
+    .encabezado{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #F1C40F;
+    }
+
+    .encabezado .logo img{
+        width: 100px;
+        height: 110px;
+    }
+
+    #despliegue{
+        padding: 0;
+        display: none;
+    }
+
+    #despliegue li{
+        display: flex;
+    }
+
+    #hamburguesa{
+        display: block;
+    }
+
+    .galeria{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+        gap: 10px;
+    }
+
+    .aside{
+        overflow: hidden;
+    }
+
+    .main{
+        grid-column: 1 / span 3;
+    }
+}
+
