@@ -1,6 +1,6 @@
 const hamburguesa = document.getElementById('hamburguesa');
 
-hamburguesa.addEventListener('click', () => {
+hamburguesa.addEventListener('click', function(){
     const despliegue = document.getElementById('despliegue');
-    despliegue.style.display = (despliegue.style.display === 'none') ? 'block' : 'none';
+    despliegue.style.display = (despliegue.style.display === 'block') ? 'none' : 'block';
 });

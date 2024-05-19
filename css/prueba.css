@@ -94,8 +94,8 @@
 
 #hamburguesa{
     color: gray;
-    display: none;
     cursor: pointer;
+    display: none;
 }
 
 .main{
@@ -252,6 +252,7 @@
         display: flex;
     }
 
+    
     #hamburguesa{
         display: block;
     }
