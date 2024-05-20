@@ -71,6 +71,10 @@
     flex-direction: row;
 }
 
+.encabezado .interaccion img{
+    cursor: pointer;
+}
+
 .menu{
     background-color: #000;
     position: relative;
