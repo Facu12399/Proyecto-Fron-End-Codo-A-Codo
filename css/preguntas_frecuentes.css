@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    font-family: "Catamaran", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+} 
+
+body{
+    background-color: #000;
+}
+
+.accordion{
+    --bs-accordion-btn-bg: #fff;
+    --bs-accordion-active-bg: #000;
+    --bs-accordion-active-color: gray;
+    --bs-accordion-btn-focus-box-shadow:none;
+}
+
+.accordion-button::after{
+    color: #fff;
+}
+
+
+

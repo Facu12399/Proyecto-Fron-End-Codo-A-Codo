@@ -10,7 +10,7 @@
     grid-template-columns: 2fr 1fr 1fr;
     grid-template-rows: auto;
     gap: 10px;
-    background-color: black;
+    background-color: hsl(0, 0%, 57%);
     text-align: center;
 }
 
@@ -18,7 +18,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #F1C40F;
+    background-color: #000000;
 }
 
 .encabezado .logo{
@@ -81,6 +81,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin: 0;
 }
 
 #despliegue li{
@@ -108,6 +109,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-auto-rows: auto;
     gap: 10px;
+    background-color: hsl(0, 0%, 57%);
 }
 
 .item-galeria{
@@ -121,6 +123,11 @@
 
 .item-galeria a img{
     width: 200px;
+}
+
+#aminoacidos, #control-peso, #shackers{
+    width: 200px;
+    height: 200px;
 }
 
 .aside {
@@ -235,7 +242,6 @@
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-        background-color: #F1C40F;
     }
 
     .encabezado .logo img{
@@ -272,4 +278,19 @@
         grid-column: 1 / span 3;
     }
 }
+
+
+@media only screen and (max-width: 600px){
+
+    .encabezado .interaccion input{
+        width: 220px;
+        height: 25px;
+        border: none;
+        border-radius: 20px;
+        padding: 10px;
+    }
+
+}
+
+
 
